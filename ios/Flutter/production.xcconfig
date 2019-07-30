@@ -1,0 +1,4 @@
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"
+#include "Generated.xcconfig"
+
+APP_NAME=Underlords Guru

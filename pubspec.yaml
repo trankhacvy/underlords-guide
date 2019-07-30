@@ -1,0 +1,403 @@
+name: UnderlordsGuru
+description: Underlords guides develop by flutter
+authors:
+  - Khac Vy
+homepage: https//underlords.com
+maintainer: Khac Vy
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_staggered_grid_view: 0.3.0
+  flutter_localizations:
+    sdk: flutter
+  fluro: 1.4.0
+  logging: 0.11.3+2
+  json_annotation: 2.4.0
+  sqflite: 1.1.5
+  flutter_stetho: 0.3.0
+  analyzer: 0.33.3
+  flutter_html: ^0.11.0
+  url_launcher: ^5.2.5
+  youtube_player: ^3.4.1
+  github: ^6.0.0
+  flutter_dotenv: ^2.0.3
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: 0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: 1.0.0
+  json_serializable: 3.0.0
+  gen_lang: 0.1.1
+  lang_table: 0.1.1
+  flutter_launcher_icons: "^0.7.3"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/app_icon.png"
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font isSupported
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    #alliances
+    - images/alliances_assassin.png
+    - images/alliances_assassin_white.png
+    - images/alliances_blood_bound.png
+    - images/alliances_blood_bound_white.png
+    - images/alliances_brawny.png
+    - images/alliances_brawny_white.png
+    - images/alliances_deadeye.png
+    - images/alliances_deadeye_white.png
+    - images/alliances_demon.png
+    - images/alliances_demon_white.png
+    - images/alliances_dragon.png
+    - images/alliances_dragon_white.png
+    - images/alliances_druid.png
+    - images/alliances_druid_white.png
+    - images/alliances_elusive.png
+    - images/alliances_elusive_white.png
+    - images/alliances_heartless.png
+    - images/alliances_heartless_white.png
+    - images/alliances_human.png
+    - images/alliances_human_white.png
+    - images/alliances_hunter.png
+    - images/alliances_hunter_white.png
+    - images/alliances_inventor.png
+    - images/alliances_inventor_white.png
+    - images/alliances_knight.png
+    - images/alliances_knight_white.png
+    - images/alliances_mage.png
+    - images/alliances_mage_white.png
+    - images/alliances_primordial.png
+    - images/alliances_primordial_white.png
+    - images/alliances_savage.png
+    - images/alliances_savage_white.png
+    - images/alliances_scaled.png
+    - images/alliances_scaled_white.png
+    - images/alliances_scrappy.png
+    - images/alliances_scrappy_white.png
+    - images/alliances_shaman.png
+    - images/alliances_shaman_white.png
+    - images/alliances_troll.png
+    - images/alliances_troll_white.png
+    - images/alliances_warlocks.png
+    - images/alliances_warlocks_white.png
+    - images/alliances_warrior.png
+    - images/alliances_warrior_white.png
+    - images/alliances_brute.png
+    - images/alliances_brute_white.png
+    - images/alliances_champion.png
+    - images/alliances_champion_white.png
+    - images/alliances_healer.png
+    - images/alliances_healer_white.png
+    - images/alliances_insect.png
+    - images/alliances_insect_white.png
+    # hero levels
+    - images/ic_hero_lv1.png
+    - images/ic_hero_lv2.png
+    - images/ic_hero_lv3.png
+    #skill icon
+    - images/ic_cooldown.png
+    - images/ic_mana_cost.png
+    - images/ic_damage_type.png
+    #tabs
+    - images/ic_tab_heroes.png
+    - images/ic_tab_alliances.png
+    - images/ic_tab_items.png
+    - images/ic_tab_underlords.png
+
+    - images/hero_tier_ace.png
+    - images/hero_tier1.png
+    - images/hero_tier2.png
+    - images/hero_tier3.png
+    - images/hero_tier4.png
+    - images/item_tier5.png
+
+    - images/ic_ace_hero.png
+
+    - images/underlord_text.png
+
+    - images/ic_offensive_item.png
+    - images/ic_defensive_item.png
+    - images/ic_global_item.png
+    - images/ic_support_item.png
+    - images/ic_contraption_item.png
+
+    - images/underlord_update.png
+    # others icon
+    - images/ic_sort_tier.png
+
+    #heroes
+    - images/hero_abaddon.png
+    - images/hero_alchemist.png
+    - images/hero_anti_mage.png
+    - images/hero_arcwarden.png
+    - images/hero_axe.png
+    - images/hero_batrider.png
+    - images/hero_beastmaster.png
+    - images/hero_bloodseeker.png
+    - images/hero_bountyhunter.png
+    - images/hero_bristleback.png
+    - images/hero_broodmother.png
+    - images/hero_chaosknight.png
+    - images/hero_clockwerk.png
+    - images/hero_crystalmaiden.png
+    - images/hero_dazzle.png
+    - images/hero_disruptor.png
+    - images/hero_doom.png
+    - images/hero_dragonknight.png
+    - images/hero_drowranger.png
+    - images/hero_enchantress.png
+    - images/hero_enigma.png
+    - images/hero_facelessvoid.png
+    - images/hero_gyrocopter.png
+    - images/hero_io.png
+    - images/hero_juggernaut.png
+    - images/hero_keeperofthelight.png
+    - images/hero_kunkka.png
+    - images/hero_legioncommander.png
+    - images/hero_lich.png
+    - images/hero_lifestealer.png
+    - images/hero_lina.png
+    - images/hero_lonedruid.png
+    - images/hero_luna.png
+    - images/hero_lycan.png
+    - images/hero_magnus.png
+    - images/hero_medusa.png
+    - images/hero_mirana.png
+    - images/hero_morphling.png
+    - images/hero_nature_prophet.png
+    - images/hero_necrophos.png
+    - images/hero_nyxassassin.png
+    - images/hero_ogremagi.png
+    - images/hero_omniknight.png
+    - images/hero_phantomassassin.png
+    - images/hero_puck.png
+    - images/hero_pudge.png
+    - images/hero_queenofpain.png
+    - images/hero_razor.png
+    - images/hero_sandking.png
+    - images/hero_shadowdemon.png
+    - images/hero_shadowfiend.png
+    - images/hero_shadowshaman.png
+    - images/hero_slardar.png
+    - images/hero_slark.png
+    - images/hero_sniper.png
+    - images/hero_sven.png
+    - images/hero_techies.png
+    - images/hero_templarassassin.png
+    - images/hero_terrorblade.png
+    - images/hero_tidehunter.png
+    - images/hero_timbersaw.png
+    - images/hero_tinker.png
+    - images/hero_tiny.png
+    - images/hero_treantprotector.png
+    - images/hero_trollwarlord.png
+    - images/hero_tusk.png
+    - images/hero_venomancer.png
+    - images/hero_viper.png
+    - images/hero_warlockhero.png
+    - images/hero_weaver.png
+    - images/hero_windranger.png
+    - images/hero_witchdoctor.png
+
+    # skills
+    - images/skill_stickynapalm.png
+    - images/skill_spikedcarapace.png
+    - images/skill_vendetta.png
+    - images/skill_nature'sattendants.png
+    - images/skill_bloodrage.png
+    - images/skill_shurikentoss.png
+    - images/skill_plasmafield.png
+    - images/skill_demonicpurge.png
+    - images/skill_hex.png
+    - images/skill_toss.png
+    - images/skill_shadowword.png
+    - images/skill_walruspunch.png
+    - images/skill_venomousgale.png
+    - images/skill_plagueward.png
+    - images/skill_bloodlust.png
+    - images/skill_berserker'scall.png
+    - images/skill_wildaxes.png
+    - images/skill_precisionaura.png
+    - images/skill_frostbite.png
+    - images/skill_arcaneaura.png
+    - images/skill_manabreak.png
+    - images/skill_moonglaives.png
+    - images/skill_chaosbolt.png
+    - images/skill_shadowwave.png
+    - images/skill_empower.png
+    - images/skill_wrathofnature.png
+    - images/skill_nature'scall.png
+    - images/skill_screamofpain.png
+    - images/skill_illusoryorb.png
+    - images/skill_phaseshift.png
+    - images/skill_meathook.png
+    - images/skill_waveform.png
+    - images/skill_corrosivehaze.png
+    - images/skill_whirlingdeath.png
+    - images/skill_powershot.png
+    - images/skill_shukuchi.png
+    - images/skill_paralyzingcask.png
+    - images/skill_relocate.png
+    - images/skill_tether.png
+    - images/skill_aphoticshield.png
+    - images/skill_bladefury.png
+    - images/skill_lagunablade.png
+    - images/skill_feast.png
+    - images/skill_shapeshift.png
+    - images/skill_summonwolves.png
+    - images/skill_batteryassault.png
+    - images/skill_coupdegrace.png
+    - images/skill_purification.png
+    - images/skill_requiemofsouls.png
+    - images/skill_essenceshift.png
+    - images/skill_pounce.png
+    - images/skill_assassinate.png
+    - images/skill_heat-seekingmissile.png
+    - images/skill_metamorphosis.png
+    - images/skill_leechseed.png
+    - images/skill_nethertoxin.png
+    - images/skill_corrosiveskin.png
+    - images/skill_viperstrike.png
+    - images/skill_acidspray.png
+    - images/skill_spinweb.png
+    - images/skill_quillspray.png
+    - images/skill_tempestdouble.png
+    - images/skill_illuminate.png
+    - images/skill_ghostship.png
+    - images/skill_breathefire.png
+    - images/skill_elderdragonform.png
+    - images/skill_summonspiritbear.png
+    - images/skill_entanglingclaws.png
+    - images/skill_sacredarrow.png
+    - images/skill_duel.png
+    - images/skill_willofthebullsnake.png
+    - images/skill_burrowstrike.png
+    - images/skill_causticfinale.png
+    - images/skill_deathpulse.png
+    - images/skill_ravage.png
+    - images/skill_refraction.png
+    - images/skill_meld.png
+    - images/skill_midnightpulse.png
+    - images/skill_staticstorm.png
+    - images/skill_calldown.png
+    - images/skill_chronocube.png
+    - images/skill_chainfrost.png
+    - images/skill_god'sstrength.png
+    - images/skill_cleave.png
+    - images/skill_stonegaze.png
+    - images/skill_splitshot.png
+    - images/skill_remotemines.png
+    - images/skill_doom.png
+    - images/skill_fervor.png
+
+    # underlords
+    - images/underlords_anessixpassive.png
+    - images/underlords_absoluteunit.png
+    - images/underlords_ademon'srevenge.png
+    - images/underlords_afterburn.png
+    - images/underlords_brillbruiser.png
+    - images/underlords_bringitdown!.png
+    - images/underlords_brokenhearts,brokenbones.png
+    - images/underlords_burningdownthehouse.png
+    - images/underlords_burnout.png
+    - images/underlords_chaotichunter.png
+    - images/underlords_confidenceboost.png
+    - images/underlords_crash.png
+    - images/underlords_dangerclose.png
+    - images/underlords_despiteallmyrage.png
+    - images/underlords_drainboom.png
+    - images/underlords_enthrall.png
+    - images/underlords_exploitweakness.png
+    - images/underlords_explosivo!.png
+    - images/underlords_feedbackloop.png
+    - images/underlords_firebreak.png
+    - images/underlords_firesuppression.png
+    - images/underlords_friendlyfire.png
+    - images/underlords_fullyrefreshed.png
+    - images/underlords_greasefire.png
+    - images/underlords_heavywounds.png
+    - images/underlords_hobgenpassive.png
+    - images/underlords_hotrod.png
+    - images/underlords_implosion.png
+    - images/underlords_instantregret.png
+    - images/underlords_kaboom.png
+    - images/underlords_keepitsecret.png
+    - images/underlords_let'sgocrazy.png
+    - images/underlords_martyr'sboon.png
+    - images/underlords_meltingpoint.png
+    - images/underlords_moltenarmor.png
+    - images/underlords_phantompain.png
+    - images/underlords_purepain.png
+    - images/underlords_rejuvenatingritual.png
+    - images/underlords_sharppain.png
+    - images/underlords_shockwave.png
+    - images/underlords_smallwound.png
+    - images/underlords_spark.png
+    - images/underlords_stickystrike.png
+    - images/underlords_summondemonicgolem.png
+    - images/underlords_supercharged.png
+    - images/underlords_sympathypains.png
+    - images/underlords_theendofmedicine.png
+    - images/underlords_transfusion.png
+    - images/underlords_pyrotechnics.png
+    - images/underlords_yaburnt.png
+
+    - images/underlords_hobgen.png
+    - images/underlords_anessix.png
+
+    - images/underlord_banner.png
+
+    - images/app_icon.png
+
+    - assets/underlords.sqlite3
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: CircularStd
+      fonts:
+        - asset: assets/fonts/CircularStd-Book.ttf
+
+        - asset: assets/fonts/CircularStd-Medium.ttf
+          weight: 600
+
+        - asset: assets/fonts/CircularStd-Black.ttf
+          weight: 700
+
+        - asset: assets/fonts/CircularStd-Bold.ttf
+          weight: 900
